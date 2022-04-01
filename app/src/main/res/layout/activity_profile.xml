@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+
+
+    <RelativeLayout tools:context=".profile" android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <Button android:layout_height="wrap_content" android:layout_width="143dp" app:backgroundTint="#B54A4A" android:text="selectFile" android:layout_marginBottom="493dp" android:layout_marginRight="147dp" android:layout_marginEnd="147dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:id="@+id/selectFile"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="No file is selected" android:layout_marginBottom="392dp" android:layout_marginRight="160dp" android:layout_marginEnd="160dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:id="@+id/notification"/>
+
+    <Button android:layout_height="59dp" android:layout_width="140dp" android:text="UPLOAD" android:layout_marginBottom="304dp" android:layout_marginRight="146dp" android:layout_marginEnd="146dp" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:id="@+id/upload"/>
+
+        <Button
+            android:id="@+id/scanbtn"
+            android:layout_width="211dp"
+            android:layout_height="62dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="208dp"
+            android:layout_marginEnd="101dp"
+            android:layout_marginRight="101dp"
+            android:layout_marginBottom="175dp"
+            android:text="@string/scan_qrcode"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/scantext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="161dp"
+            android:layout_marginRight="161dp"
+            android:layout_marginBottom="139dp"
+            android:text="@string/demo_text"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:text="SignOut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
